@@ -1,0 +1,6 @@
+.errorPageContainer {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 68px);
+  padding: 1rem;
+}

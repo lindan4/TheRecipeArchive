@@ -1,0 +1,23 @@
+.outerProfileContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 3rem;
+}
+
+.profileCard {
+  width: min(760px, 100%);
+  border-radius: 24px;
+  border: 1px solid var(--surface-border);
+  padding: 1.5rem;
+  background: var(--surface-solid);
+}
+
+.profileTitle {
+  margin-bottom: 1.25rem;
+  font-family: 'Didot', 'Bodoni MT', serif;
+}
+
+.profileForm {
+  display: grid;
+  gap: 1.25rem;
+}

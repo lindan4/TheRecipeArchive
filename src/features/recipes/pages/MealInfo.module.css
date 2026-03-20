@@ -1,0 +1,83 @@
+.mealInfoLoadingContainer {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 68px);
+}
+
+.outerMealInfoContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 3rem;
+}
+
+.outerMealInfoNoContentContainer {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 68px);
+  padding: 1rem;
+}
+
+.mealGrid {
+  width: min(1120px, 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.mealImage {
+  width: 100%;
+  border-radius: 26px;
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 10px 35px rgba(47, 27, 12, 0.18);
+}
+
+.upperSectionMealContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.mealTitle {
+  font-family: 'Didot', 'Bodoni MT', serif;
+}
+
+.sectionCard {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--surface-solid);
+  border: 1px solid var(--surface-border);
+  border-radius: 16px;
+}
+
+.sectionCard ul {
+  margin: 0.8rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.stepsContainer {
+  margin-top: 0.9rem;
+}
+
+.stepHeading {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--accent-strong);
+  text-transform: none;
+}
+
+.stepLine {
+  margin: 0.55rem 0;
+  line-height: 1.6;
+}
+
+.stepNumber {
+  font-weight: 700;
+}
+
+@media (max-width: 960px) {
+  .mealGrid {
+    grid-template-columns: 1fr;
+  }
+}

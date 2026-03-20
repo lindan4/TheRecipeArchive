@@ -1,0 +1,45 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 3rem;
+}
+
+.heroGrid {
+  width: min(1040px, 100%);
+  display: grid;
+  gap: 1.2rem;
+}
+
+.heroTitle {
+  font-family: 'Didot', 'Bodoni MT', serif;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.heroSubtitle {
+  max-width: 62ch;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.searchWrap {
+  width: min(760px, 100%);
+}
+
+.sectionSpacing {
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    padding-top: 1.2rem;
+  }
+
+  .heroTitle {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+}
