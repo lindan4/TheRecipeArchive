@@ -1,0 +1,32 @@
+.cardContentStyle {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 46%);
+  align-items: stretch;
+  gap: 1rem;
+  padding: 1.4rem;
+}
+
+.randomRecipeTitleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.8rem;
+}
+
+.randomRecipeImage {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid var(--surface-border);
+}
+
+@media (max-width: 860px) {
+  .cardContentStyle {
+    grid-template-columns: 1fr;
+  }
+
+  .randomRecipeImage {
+    height: 280px;
+  }
+}
