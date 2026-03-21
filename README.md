@@ -81,11 +81,3 @@ src/
     error/            # Error page
   shared/             # Firebase setup, hooks, constants
 ```
-
-## Deployment
-
-Production builds are configured for GitHub Pages with base path:
-
-`/juno_react_project/`
-
-This is set in `vite.config.ts`.
