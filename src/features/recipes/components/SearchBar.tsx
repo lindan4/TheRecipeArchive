@@ -34,7 +34,7 @@ const SearchBar = ({ initialValue = '', onSearchPress }: SearchBarProps) => {
         background: 'var(--surface-solid)',
         transition: 'box-shadow 200ms ease, transform 200ms ease',
         '&:focus-within': {
-          boxShadow: '0 8px 18px rgba(173, 93, 36, 0.2)',
+          boxShadow: '0 8px 24px rgba(99, 102, 241, 0.35)',
           transform: 'translateY(-1px)'
         }
       }}

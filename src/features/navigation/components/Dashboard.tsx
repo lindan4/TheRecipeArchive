@@ -30,10 +30,11 @@ const modalBoxStyle = {
   transform: "translate(-50%, -50%)",
   width: { xs: "92vw", sm: 500 },
   maxWidth: "500px",
-  bgcolor: "#fffaf0",
-  border: "1px solid rgba(38, 20, 5, 0.2)",
+  bgcolor: "var(--surface-solid)",
+  backdropFilter: "blur(12px)",
+  border: "1px solid var(--surface-border)",
   borderRadius: "20px",
-  boxShadow: "0 16px 48px rgba(0, 0, 0, 0.18)",
+  boxShadow: "0 24px 64px rgba(0, 0, 0, 0.4)",
   p: { xs: 3, sm: 4 },
 };
 
@@ -255,7 +256,7 @@ const Dashboard = () => {
                         "transform 180ms ease, background-color 180ms ease",
                       "&:hover": {
                         transform: "translateY(-1px)",
-                        backgroundColor: "rgba(173,93,36,0.08)",
+                        backgroundColor: "rgba(236, 72, 153, 0.12)",
                       },
                     }}
                   >
@@ -269,7 +270,7 @@ const Dashboard = () => {
                         "transform 180ms ease, background-color 180ms ease",
                       "&:hover": {
                         transform: "translateY(-1px)",
-                        backgroundColor: "rgba(173,93,36,0.08)",
+                        backgroundColor: "rgba(236, 72, 153, 0.12)",
                       },
                     }}
                   >
@@ -288,7 +289,7 @@ const Dashboard = () => {
                         "transform 180ms ease, background-color 180ms ease",
                       "&:hover": {
                         transform: "translateY(-1px)",
-                        backgroundColor: "rgba(173,93,36,0.08)",
+                        backgroundColor: "rgba(236, 72, 153, 0.12)",
                       },
                     }}
                   >
@@ -307,7 +308,7 @@ const Dashboard = () => {
                     transition: "transform 180ms ease, box-shadow 180ms ease",
                     "&:hover": {
                       transform: "translateY(-1px)",
-                      boxShadow: "0 8px 18px rgba(173,93,36,0.28)",
+                      boxShadow: "0 8px 18px rgba(236, 72, 153, 0.35)",
                     },
                   }}
                 >

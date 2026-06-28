@@ -1,45 +1,52 @@
 .mainContainer {
   display: flex;
   justify-content: center;
-  padding: 2rem 1rem 3rem;
+  padding: 4rem 1rem 6rem;
 }
 
 .heroGrid {
   width: min(1040px, 100%);
   display: grid;
-  gap: 1.2rem;
+  gap: 2rem;
 }
 
 .heroTitle {
-  font-family: 'Didot', 'Bodoni MT', serif;
-  letter-spacing: 0.02em;
-  margin-bottom: 0.4rem;
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  margin-bottom: 1rem !important;
+  background: linear-gradient(135deg, #f8fafc 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .heroSubtitle {
   max-width: 62ch;
-  font-size: 1.1rem;
+  font-size: 1.25rem !important;
   color: var(--text-secondary);
+  line-height: 1.6;
 }
 
 .searchWrap {
   width: min(760px, 100%);
+  position: relative;
 }
 
 .sectionSpacing {
-  margin-top: 0.2rem;
+  margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
   .mainContainer {
-    padding-top: 1.2rem;
+    padding-top: 2rem;
   }
 
   .heroTitle {
-    font-size: clamp(2rem, 9vw, 3rem);
+    font-size: clamp(2.5rem, 9vw, 3.5rem) !important;
   }
 
   .heroSubtitle {
-    font-size: 1rem;
+    font-size: 1.1rem !important;
   }
 }
